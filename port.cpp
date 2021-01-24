@@ -1,5 +1,4 @@
 #include <iostream>
-#include <cstring>
 #include "string.h"
 #include "field.h"
 #include "port.h"
