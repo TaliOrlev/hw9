@@ -27,7 +27,7 @@ while read packet; do
 	done < "$1"
 done
 
-cat final_packets.txt|sort|sed '/^$/d'|tr -d ' '
+cat final_packets.txt|sort|uniq|sed '/^$/d'|tr -d ' '
 
 rm num_of_apperences
 rm results_packet.txt
